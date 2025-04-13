@@ -15,5 +15,6 @@ namespace DataAccessLayer.Concrete
             optionsBuilder.UseSqlServer("server=DESKTOP-TQ162FD\\SQLEXPRESS;database=EhliyetProjesii;integrated security=true; TrustServerCertificate=True");
         }
         DbSet<Anasayfa>anasayfas { get; set; }
+        DbSet<Hizmet>hizmets { get; set; }
     }
 }
