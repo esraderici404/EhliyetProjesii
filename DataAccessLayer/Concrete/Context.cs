@@ -16,5 +16,6 @@ namespace DataAccessLayer.Concrete
         }
         DbSet<Anasayfa>anasayfas { get; set; }
         DbSet<Hizmet>hizmets { get; set; }
+        DbSet<Hakkımızda>hakkımızdas { get; set; }
     }
 }

@@ -16,7 +16,8 @@ builder.Services.AddScoped<IAnasayfaService,AnasayfaManeger>();
 builder.Services.AddScoped<IHizmetDal,EfHizmetDal>();
 builder.Services.AddScoped<IHizmetService,HizmetManeger>();
 
-
+builder.Services.AddScoped<IHakkýmýzdaDal,EfHakkýmýzdaDal>();
+builder.Services.AddScoped<IHakkýmýzdaService,HakkýmýzdaManeger>();
 
 
 var app = builder.Build();
