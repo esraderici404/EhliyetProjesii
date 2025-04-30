@@ -19,6 +19,18 @@ builder.Services.AddScoped<IHizmetService,HizmetManeger>();
 builder.Services.AddScoped<IHakkýmýzdaDal,EfHakkýmýzdaDal>();
 builder.Services.AddScoped<IHakkýmýzdaService,HakkýmýzdaManeger>();
 
+builder.Services.AddScoped<IKursDal,EfKursDal>();
+builder.Services.AddScoped<IKursService,KursManeger>();
+
+builder.Services.AddScoped<IRandevuDal,EfRandevuDal>();
+builder.Services.AddScoped<IRandevuService,RandevuManeger>();
+
+builder.Services.AddScoped<IÇalýþanDal, EfÇalýþanDal>();
+builder.Services.AddScoped<IÇalýþanService,ÇalýþanManeger>();
+
+builder.Services.AddScoped<IYorumlarDal,EfYorumlarDal>();
+builder.Services.AddScoped<IYorumlarService,YorumlarManeger>();
+
 
 var app = builder.Build();
 
