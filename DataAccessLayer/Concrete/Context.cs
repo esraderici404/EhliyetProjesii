@@ -21,5 +21,6 @@ namespace DataAccessLayer.Concrete
         DbSet<Randevu>randevus { get; set; }
         DbSet<Çalışan>çalışans {  get; set; }
         DbSet<Yorumlar> yorumlars { get; set; }
+        DbSet<Özellikler>özelliklers { get; set; }
     }
 }

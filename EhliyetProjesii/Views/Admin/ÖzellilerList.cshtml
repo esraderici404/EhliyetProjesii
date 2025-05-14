@@ -1,0 +1,75 @@
+﻿@using EntityLayer
+@model List<Özellikler>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Özellikler Listesi</title>
+</head>
+<body>
+
+
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Özellikler Tablosu </h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Picture</th>
+                            <th>Picture2</th>
+                            <th>Title1</th>
+                            <th>Title2</th>
+                            <th>Service1</th>
+                            <th>Description1</th>
+                            <th>Service2</th>
+                            <th>Description2</th>
+                            <th>Service3</th>
+                            <th>Description3</th>
+                            <th>Service4</th>
+                            <th>Description4</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @foreach (var iteem in Model)
+                        {
+                            <tr>
+                                <td>@iteem.ID</td>
+                                <td>@iteem.Picture</td>
+                                <td>@iteem.Picture2</td>
+                                <td>@iteem.Title1</td>
+                                <td>@iteem.Title2</td>
+                                <td>@iteem.Service1</td>
+                                <td>@iteem.Description1</td>
+                                <td>@iteem.Service2</td>
+                                <td>@iteem.Description2</td>
+                                <td>@iteem.Service3</td>
+                                <td>@iteem.Description3</td>
+                                <td>@iteem.Service4</td>
+                                <td>@iteem.Description4</td>
+
+
+
+
+
+
+                            </tr>
+
+                        }
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

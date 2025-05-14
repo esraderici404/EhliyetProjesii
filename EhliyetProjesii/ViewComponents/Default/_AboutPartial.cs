@@ -5,6 +5,8 @@ namespace EhliyetProjesii.ViewComponents.Default
 {
     public class _AboutPartial:ViewComponent
     {
+      
+
         private readonly IHakkımızdaService _hakkımızdaService;
 
         public _AboutPartial(IHakkımızdaService hakkımızdaService)

@@ -1,55 +1,63 @@
-﻿<div class="container-xxl py-6">
+﻿@using EntityLayer
+
+@model List<Özellikler>
+<div class="container-xxl py-6">
     <div class="container">
         <div class="row g-5">
+            @foreach(var iteem in Model)
+            {
+                
+          
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="text-primary text-uppercase mb-2">Why Choose Us!</h6>
-                <h1 class="display-6 mb-4">Best Driving Training Agency In Your City</h1>
-                <p class="mb-5">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                <h1 class="display-6 mb-4">@iteem.Title1</h1>
+                <p class="mb-5">@iteem.Title2</p>
                 <div class="row gy-5 gx-4">
                     <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
                         <div class="d-flex align-items-center mb-3">
                             <div class="flex-shrink-0 btn-square bg-primary me-3">
                                 <i class="fa fa-check text-white"></i>
                             </div>
-                            <h5 class="mb-0">Fully Licensed</h5>
+                            <h5 class="mb-0">@iteem.Service1</h5>
                         </div>
-                        <span>Magna sea eos sit dolor, ipsum amet ipsum lorem diam eos</span>
+                        <span>@iteem.Description1</span>
                     </div>
                     <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
                         <div class="d-flex align-items-center mb-3">
                             <div class="flex-shrink-0 btn-square bg-primary me-3">
                                 <i class="fa fa-check text-white"></i>
                             </div>
-                            <h5 class="mb-0">Online Tracking</h5>
+                            <h5 class="mb-0">@iteem.Service2</h5>
                         </div>
-                        <span>Magna sea eos sit dolor, ipsum amet ipsum lorem diam eos</span>
+                        <span>@iteem.Description2</span>
                     </div>
                     <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
                         <div class="d-flex align-items-center mb-3">
                             <div class="flex-shrink-0 btn-square bg-primary me-3">
                                 <i class="fa fa-check text-white"></i>
                             </div>
-                            <h5 class="mb-0">Afordable Fee</h5>
+                            <h5 class="mb-0">@iteem.Service3</h5>
                         </div>
-                        <span>Magna sea eos sit dolor, ipsum amet ipsum lorem diam eos</span>
+                        <span>@iteem.Description3</span>
                     </div>
                     <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
                         <div class="d-flex align-items-center mb-3">
                             <div class="flex-shrink-0 btn-square bg-primary me-3">
                                 <i class="fa fa-check text-white"></i>
                             </div>
-                            <h5 class="mb-0">Best Trainers</h5>
+                            <h5 class="mb-0">@iteem.Service4 </h5>
                         </div>
-                        <span>Magna sea eos sit dolor, ipsum amet ipsum lorem diam eos</span>
+                        <span>@iteem.Description4</span>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="position-relative overflow-hidden pe-5 pt-5 h-100" style="min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="~/drivin-1.0.0/img/about-1.jpg" alt="" style="object-fit: cover;">
-                    <img class="position-absolute top-0 end-0 bg-white ps-3 pb-3" src="~/drivin-1.0.0/img/about-2.jpg" alt="" style="width: 200px; height: 200px">
+                    <img class="position-absolute w-100 h-100" src="@iteem.Picture" alt="" style="object-fit: cover;">
+                    <img class="position-absolute top-0 end-0 bg-white ps-3 pb-3" src="@iteem.Picture2" alt="" style="width: 200px; height: 200px">
                 </div>
             </div>
+            }
         </div>
     </div>
 </div>

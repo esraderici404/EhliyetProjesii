@@ -31,8 +31,12 @@ builder.Services.AddScoped<IÇalýþanService,ÇalýþanManeger>();
 builder.Services.AddScoped<IYorumlarDal,EfYorumlarDal>();
 builder.Services.AddScoped<IYorumlarService,YorumlarManeger>();
 
+builder.Services.AddScoped<IÖzelliklerDal,EfÖzelliklerDal>();
+builder.Services.AddScoped<IÖzelliklerService,OzelliklerManeger>();
+
 
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -51,6 +55,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Default}/{action=Index}/{id?}");
 
 app.Run();

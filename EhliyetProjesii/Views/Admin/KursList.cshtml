@@ -1,0 +1,57 @@
+﻿@using EntityLayer
+@model List<Kurs>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Kurs Listesi</title>
+</head>
+<body>
+
+
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Kurslar Tablosu </h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Picture</th>
+                            <th>Price</th>
+                            <th>Time</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @foreach (var iteem in Model)
+                        {
+                            <tr>
+                                <td>@iteem.ID</td>
+                                <td>@iteem.Title</td>
+                                <td>@iteem.Description</td>
+                                <td>@iteem.Picture</td>
+                                <td>@iteem.Price</td>
+                                <td>@iteem.Time</td>
+                                <td>@iteem.Grade</td>
+                            </tr>
+
+                        }
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
