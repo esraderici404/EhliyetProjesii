@@ -12,7 +12,7 @@ Bu proje, kullanıcıların ehliyet sınav içeriklerini görüntüleyebildiği 
 ## 🧱 Kullanılan Teknolojiler
 
 ### ✅ Frontend
-- HTML  
+- HTML CSS JS
 - Razor View Engine (ASP.NET MVC)
 
 ### ✅ Backend
