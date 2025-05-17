@@ -39,3 +39,9 @@ Bu proje, kullanıcıların ehliyet sınav içeriklerini görüntüleyebildiği 
 Admin paneli sayesinde yöneticiler sistemdeki sınav içeriklerini görüntüleyebilir. Şu anda yalnızca **listeleme** işlemi yapılabilmektedir. Ancak yapı, ekleme, silme, güncelleme gibi diğer işlemler için genişletilmeye uygundur.
 
 
+<img width="946" alt="proje resim 1" src="https://github.com/user-attachments/assets/6e94f99c-c3af-4c1d-a247-2d37fe201629" />
+<img width="950" alt="proje resim 4" src="https://github.com/user-attachments/assets/99b016e5-aa5e-4664-85b6-941c983dd824" />
+<img width="955" alt="proje resim 3" src="https://github.com/user-attachments/assets/05957ffa-02cb-42b2-a171-8d1ed4a8559b" />
+<img width="950" alt="proje resim 2" src="https://github.com/user-attachments/assets/1d56bbc7-3ad3-4601-ab07-d3b552cd36c2" />
+
+
